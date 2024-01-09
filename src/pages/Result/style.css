@@ -1,0 +1,12 @@
+.correctAnswer{
+    color: rgb(18, 218, 18) !important;
+    font-weight: 600;
+}
+.wrongAnswer{
+    color: rgb(239, 15, 15);
+    font-weight: 600;
+}
+span{
+    margin-right: 30px;
+    font-weight: 600;
+}

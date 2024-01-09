@@ -1,0 +1,111 @@
+:root {
+    --main-blue: #005b96;
+    --white: #fff;
+    --dark-blue: #011f4b;
+  }
+  
+  header {
+    background-color: var(--main-blue);
+    display: flex;
+    align-items: center;
+    z-index: 0;
+  }
+  
+  footer {
+    background-color: var(--dark-blue);
+    padding: 15px;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main {
+    min-height: calc(72vh + 6px);
+    padding: 30px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .header__logo {
+    /* background-color: aqua; */
+    font-size: 32px;
+    font-weight: 700;
+    padding: 30px;
+    /* line-height: 30px; */
+  }
+  
+  .header__logo a {
+    color: var(--white);
+  }
+  
+  .header__navs {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  .header__navs--unloginLayout {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+  }
+  
+  .header__navs--unloginLayout .header__nav {
+    padding-left: 15px;
+    /* line-height: 100px; */
+  }
+  
+  .header__nav a {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .header__navs--loginedLayout {
+    display: flex;
+    align-items: center;
+    /* line-height: -10px; */
+    /* background-color: aqua; */
+    justify-content: flex-end;
+    padding-left: 30px;
+    position: relative;
+  }
+  
+  .header__navs--loginedLayout .header__nav {
+    padding: 15px;
+    /* margin: 5px; */
+  }
+  .header__navs--unloginLayout .header__nav{
+    padding: 15px;
+  }
+  
+  .header__navs--items {
+    display: flex;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+  }
+  
+  .header__navs--logout {
+    margin-left: 30px;
+  }
+  
+  .header__nav {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .header__nav .active::before {
+    content: "";
+    position: absolute;
+    top: 90%;
+    right: 15%;
+    width: 70%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.999);
+  }
+  

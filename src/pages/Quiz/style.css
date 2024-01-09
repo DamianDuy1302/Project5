@@ -1,0 +1,13 @@
+.answer{
+    padding: 2px 0px 4px 15px;
+    /* background-color: blue; */
+    position: relative;
+}
+.answer__check{
+    cursor: pointer;
+    /* width: 16px; */
+}
+.answer__lable{
+    cursor: pointer;
+    position: absolute;
+}
